@@ -9,23 +9,35 @@
 /* Begin PBXBuildFile section */
 		8D2ABFBE2AFDB2CC002F2B16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFBD2AFDB2CC002F2B16 /* AppDelegate.swift */; };
 		8D2ABFC02AFDB2CC002F2B16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFBF2AFDB2CC002F2B16 /* SceneDelegate.swift */; };
-		8D2ABFC22AFDB2CC002F2B16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFC12AFDB2CC002F2B16 /* ViewController.swift */; };
+		8D2ABFC22AFDB2CC002F2B16 /* SearchHeroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFC12AFDB2CC002F2B16 /* SearchHeroController.swift */; };
 		8D2ABFC52AFDB2CC002F2B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2ABFC32AFDB2CC002F2B16 /* Main.storyboard */; };
 		8D2ABFC82AFDB2CC002F2B16 /* SuperHeroApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFC62AFDB2CC002F2B16 /* SuperHeroApp.xcdatamodeld */; };
 		8D2ABFCA2AFDB2CD002F2B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D2ABFC92AFDB2CD002F2B16 /* Assets.xcassets */; };
 		8D2ABFCD2AFDB2CD002F2B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2ABFCB2AFDB2CD002F2B16 /* LaunchScreen.storyboard */; };
+		8D2ABFDF2AFDB6C5002F2B16 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFDD2AFDB6C5002F2B16 /* HeroCell.swift */; };
+		8D2ABFE02AFDB6C5002F2B16 /* HeroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2ABFDE2AFDB6C5002F2B16 /* HeroCell.xib */; };
+		8D2ABFE32AFDBC77002F2B16 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFE22AFDBC77002F2B16 /* Hero.swift */; };
+		8D2ABFE52AFDC20E002F2B16 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFE42AFDC20E002F2B16 /* HttpRequestHelper.swift */; };
+		8D2ABFE72AFDC2C9002F2B16 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFE62AFDC2C9002F2B16 /* UIImageView.swift */; };
+		8D2ABFEB2AFDC38A002F2B16 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFEA2AFDC38A002F2B16 /* HeroService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D2ABFBA2AFDB2CC002F2B16 /* SuperHeroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D2ABFBD2AFDB2CC002F2B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D2ABFBF2AFDB2CC002F2B16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D2ABFC12AFDB2CC002F2B16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D2ABFC12AFDB2CC002F2B16 /* SearchHeroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeroController.swift; sourceTree = "<group>"; };
 		8D2ABFC42AFDB2CC002F2B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D2ABFC72AFDB2CC002F2B16 /* SuperHeroApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuperHeroApp.xcdatamodel; sourceTree = "<group>"; };
 		8D2ABFC92AFDB2CD002F2B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D2ABFCC2AFDB2CD002F2B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D2ABFCE2AFDB2CD002F2B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D2ABFDD2AFDB6C5002F2B16 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		8D2ABFDE2AFDB6C5002F2B16 /* HeroCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroCell.xib; sourceTree = "<group>"; };
+		8D2ABFE22AFDBC77002F2B16 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		8D2ABFE42AFDC20E002F2B16 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
+		8D2ABFE62AFDC2C9002F2B16 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		8D2ABFEA2AFDC38A002F2B16 /* HeroService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +70,14 @@
 		8D2ABFBC2AFDB2CC002F2B16 /* SuperHeroApp */ = {
 			isa = PBXGroup;
 			children = (
+				8D2ABFE12AFDBC50002F2B16 /* Models */,
+				8D2ABFD82AFDB5AE002F2B16 /* DAO */,
+				8D2ABFD72AFDB5A2002F2B16 /* Extensions */,
+				8D2ABFD62AFDB596002F2B16 /* Helpers */,
+				8D2ABFD52AFDB58E002F2B16 /* Services */,
+				8D2ABFD42AFDB587002F2B16 /* UI */,
 				8D2ABFBD2AFDB2CC002F2B16 /* AppDelegate.swift */,
 				8D2ABFBF2AFDB2CC002F2B16 /* SceneDelegate.swift */,
-				8D2ABFC12AFDB2CC002F2B16 /* ViewController.swift */,
 				8D2ABFC32AFDB2CC002F2B16 /* Main.storyboard */,
 				8D2ABFC92AFDB2CD002F2B16 /* Assets.xcassets */,
 				8D2ABFCB2AFDB2CD002F2B16 /* LaunchScreen.storyboard */,
@@ -68,6 +85,55 @@
 				8D2ABFC62AFDB2CC002F2B16 /* SuperHeroApp.xcdatamodeld */,
 			);
 			path = SuperHeroApp;
+			sourceTree = "<group>";
+		};
+		8D2ABFD42AFDB587002F2B16 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D2ABFC12AFDB2CC002F2B16 /* SearchHeroController.swift */,
+				8D2ABFDD2AFDB6C5002F2B16 /* HeroCell.swift */,
+				8D2ABFDE2AFDB6C5002F2B16 /* HeroCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D2ABFD52AFDB58E002F2B16 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D2ABFEA2AFDC38A002F2B16 /* HeroService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8D2ABFD62AFDB596002F2B16 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8D2ABFE42AFDC20E002F2B16 /* HttpRequestHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8D2ABFD72AFDB5A2002F2B16 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D2ABFE62AFDC2C9002F2B16 /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8D2ABFD82AFDB5AE002F2B16 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		8D2ABFE12AFDBC50002F2B16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D2ABFE22AFDBC77002F2B16 /* Hero.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +197,7 @@
 				8D2ABFCD2AFDB2CD002F2B16 /* LaunchScreen.storyboard in Resources */,
 				8D2ABFCA2AFDB2CD002F2B16 /* Assets.xcassets in Resources */,
 				8D2ABFC52AFDB2CC002F2B16 /* Main.storyboard in Resources */,
+				8D2ABFE02AFDB6C5002F2B16 /* HeroCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +208,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D2ABFC22AFDB2CC002F2B16 /* ViewController.swift in Sources */,
+				8D2ABFE72AFDC2C9002F2B16 /* UIImageView.swift in Sources */,
+				8D2ABFDF2AFDB6C5002F2B16 /* HeroCell.swift in Sources */,
+				8D2ABFC22AFDB2CC002F2B16 /* SearchHeroController.swift in Sources */,
 				8D2ABFBE2AFDB2CC002F2B16 /* AppDelegate.swift in Sources */,
 				8D2ABFC02AFDB2CC002F2B16 /* SceneDelegate.swift in Sources */,
+				8D2ABFEB2AFDC38A002F2B16 /* HeroService.swift in Sources */,
 				8D2ABFC82AFDB2CC002F2B16 /* SuperHeroApp.xcdatamodeld in Sources */,
+				8D2ABFE52AFDC20E002F2B16 /* HttpRequestHelper.swift in Sources */,
+				8D2ABFE32AFDBC77002F2B16 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
