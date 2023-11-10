@@ -10,11 +10,13 @@ import Foundation
 typealias Heros = [Hero]
 
 struct Hero: Decodable {
+    let id: String
     let name: String
     let biography: Biography
     let image: HeroImage
 
     enum CodingKeys: String, CodingKey {
+        case id
         case name
         case biography
         case image

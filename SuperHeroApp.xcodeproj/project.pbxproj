@@ -20,6 +20,7 @@
 		8D2ABFE52AFDC20E002F2B16 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFE42AFDC20E002F2B16 /* HttpRequestHelper.swift */; };
 		8D2ABFE72AFDC2C9002F2B16 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFE62AFDC2C9002F2B16 /* UIImageView.swift */; };
 		8D2ABFEB2AFDC38A002F2B16 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFEA2AFDC38A002F2B16 /* HeroService.swift */; };
+		8D2ABFED2AFDD1DD002F2B16 /* HeroDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2ABFEC2AFDD1DD002F2B16 /* HeroDao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8D2ABFE42AFDC20E002F2B16 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
 		8D2ABFE62AFDC2C9002F2B16 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		8D2ABFEA2AFDC38A002F2B16 /* HeroService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
+		8D2ABFEC2AFDD1DD002F2B16 /* HeroDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		8D2ABFD82AFDB5AE002F2B16 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				8D2ABFEC2AFDD1DD002F2B16 /* HeroDao.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				8D2ABFE72AFDC2C9002F2B16 /* UIImageView.swift in Sources */,
 				8D2ABFDF2AFDB6C5002F2B16 /* HeroCell.swift in Sources */,
+				8D2ABFED2AFDD1DD002F2B16 /* HeroDao.swift in Sources */,
 				8D2ABFC22AFDB2CC002F2B16 /* SearchHeroController.swift in Sources */,
 				8D2ABFBE2AFDB2CC002F2B16 /* AppDelegate.swift in Sources */,
 				8D2ABFC02AFDB2CC002F2B16 /* SceneDelegate.swift in Sources */,
