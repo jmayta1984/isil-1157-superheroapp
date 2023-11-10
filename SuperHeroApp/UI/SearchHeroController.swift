@@ -17,9 +17,7 @@ class SearchHeroController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.herosTableView.dequeueReusableCell(withIdentifier: HeroCell.identifier, for: indexPath) as! HeroCell
-        cell.nameLabel.text = heros[indexPath.row].name
-        cell.fullNameLabel.text = heros[indexPath.row].biography.fullName
-        cell.posterImageView.loadImage(from: heros[indexPath.row].image.url)
+        cell.hero = heros[indexPath.row]
         return cell
     }
     

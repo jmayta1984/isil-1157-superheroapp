@@ -15,6 +15,23 @@ class HeroCell: UITableViewCell {
     
     @IBOutlet weak var fullNameLabel: UILabel!
     
+    @IBOutlet weak var favoriteButton: UIButton!
+    
+    var hero: Hero? {
+        didSet {
+            nameLabel.text = hero?.name
+            fullNameLabel.text = hero?.biography.fullName
+            posterImageView.loadImage(from: hero?.image.url ?? "")
+            checkFavorite()
+        }
+    }
+    
+    var isFavorite = false {
+        didSet {
+            favoriteButton.tintColor = isFavorite ? .red : .gray
+        }
+    }
+    
     static var identifier: String {
         return String(describing: self)
     }
@@ -25,13 +42,28 @@ class HeroCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
+        initView()
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    func checkFavorite(){
+        guard let hero = hero else { return }
+        isFavorite = HeroDao().isFavorite(id: hero.id)
+    }
+    
+    func initView() {
+        posterImageView.contentMode = ContentMode.scaleAspectFill
+        posterImageView.layer.cornerRadius = 8
+        
+    }
+    @IBAction func saveFavorite(_ sender: UIButton) {
+        guard let hero = hero else { return }
+        isFavorite = !isFavorite
+        if isFavorite {
+            HeroDao().insert(id: hero.id, name: hero.name)
+        }
+        else {
+            HeroDao().delete(id: hero.id)
+        }
+    }
 }

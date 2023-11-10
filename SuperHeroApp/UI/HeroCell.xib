@@ -24,16 +24,16 @@
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="IAl-ol-ILi">
-                        <rect key="frame" x="80" y="8" width="232" height="64"/>
+                        <rect key="frame" x="80" y="8" width="192" height="64"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hte-vI-5Y8">
-                                <rect key="frame" x="0.0" y="0.0" width="232" height="29.666666666666668"/>
+                                <rect key="frame" x="0.0" y="0.0" width="192" height="29.666666666666668"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc4-uJ-lQl">
-                                <rect key="frame" x="0.0" y="36.666666666666664" width="232" height="27.333333333333336"/>
+                                <rect key="frame" x="0.0" y="36.666666666666664" width="192" height="27.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,18 +45,34 @@
                             <constraint firstItem="Hte-vI-5Y8" firstAttribute="top" secondItem="IAl-ol-ILi" secondAttribute="top" id="a59-91-aIc"/>
                         </constraints>
                     </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23y-sp-qJv">
+                        <rect key="frame" x="280" y="24" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="7XV-dh-Smb"/>
+                            <constraint firstAttribute="height" constant="32" id="8Cq-l4-dQm"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="heart" catalog="system"/>
+                        <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system"/>
+                        <connections>
+                            <action selector="saveFavorite:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FPl-ud-v1J"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="23y-sp-qJv" firstAttribute="leading" secondItem="IAl-ol-ILi" secondAttribute="trailing" constant="8" id="8Vw-xa-Ob9"/>
+                    <constraint firstItem="23y-sp-qJv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EY6-Ej-3q5"/>
                     <constraint firstItem="TAJ-7a-Jfe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Iup-27-ndz"/>
+                    <constraint firstAttribute="trailing" secondItem="23y-sp-qJv" secondAttribute="trailing" constant="8" id="PvM-uF-jkW"/>
                     <constraint firstAttribute="bottom" secondItem="IAl-ol-ILi" secondAttribute="bottom" constant="8" id="dgw-QL-MvZ"/>
                     <constraint firstItem="TAJ-7a-Jfe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ikm-r6-0Tq"/>
-                    <constraint firstAttribute="trailing" secondItem="IAl-ol-ILi" secondAttribute="trailing" constant="8" id="n1G-1u-SHA"/>
                     <constraint firstItem="IAl-ol-ILi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="sSC-Yy-CTc"/>
                     <constraint firstItem="IAl-ol-ILi" firstAttribute="leading" secondItem="TAJ-7a-Jfe" secondAttribute="trailing" constant="8" id="x53-S2-tQ7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="favoriteButton" destination="23y-sp-qJv" id="IrZ-dl-MDd"/>
                 <outlet property="fullNameLabel" destination="dc4-uJ-lQl" id="O9r-fC-fcF"/>
                 <outlet property="nameLabel" destination="Hte-vI-5Y8" id="q8Z-ss-TxN"/>
                 <outlet property="posterImageView" destination="TAJ-7a-Jfe" id="eYP-HD-cFo"/>
@@ -64,4 +80,8 @@
             <point key="canvasLocation" x="48" y="21"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+    </resources>
 </document>
