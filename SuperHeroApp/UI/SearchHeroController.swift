@@ -15,14 +15,17 @@ class SearchHeroController: UIViewController, UITableViewDataSource, UITableView
         heros.count
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.herosTableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.herosTableView.dequeueReusableCell(withIdentifier: HeroCell.identifier, for: indexPath) as! HeroCell
         cell.hero = heros[indexPath.row]
         return cell
     }
-    
-    
-    
+          
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         80
     }

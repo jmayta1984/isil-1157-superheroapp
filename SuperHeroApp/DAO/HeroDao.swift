@@ -48,6 +48,7 @@ class HeroDao: HeroDaoProtocol {
             for heroEntity in heroEntities {
                 context.delete(heroEntity)
             }
+            try context.save()
             
         } catch (let error) {
             print("Error: \(error)")
